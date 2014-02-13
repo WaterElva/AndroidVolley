@@ -1,3 +1,7 @@
+/*
+ * Created by Storm Zhang, Feb 11, 2014.
+ */
+
 package me.storm.volley.ui;
 
 import java.util.Arrays;
@@ -16,9 +20,10 @@ import android.widget.ListView;
 
 public class MainActivity extends BaseActivity implements OnItemClickListener {
 	private ListView mListView;
-	private List<ActivityInfo> mData = Arrays.asList(new ActivityInfo("SimpleRequest",
-			SimpleRequestActivity.class), new ActivityInfo("JsonRequest",
-			JsonRequestActivity.class));
+	private List<ActivityInfo> mData = Arrays.asList(
+			new ActivityInfo("SimpleRequest", SimpleRequestActivity.class),
+			new ActivityInfo("JsonRequest", JsonRequestActivity.class),
+			new ActivityInfo("Post Params", ParamsRequestActivity.class));
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

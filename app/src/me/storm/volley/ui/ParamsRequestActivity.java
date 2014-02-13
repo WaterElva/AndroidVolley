@@ -1,11 +1,14 @@
 /*
- * Created by Storm Zhang, Feb 11, 2014.
+ * Created by Storm Zhang, Feb 13, 2014.
  */
 
 package me.storm.volley.ui;
 
-import vendor.Api;
+import java.util.Map;
+
 import me.storm.volley.R;
+import me.storm.volley.data.ApiParams;
+import vendor.Api;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -16,13 +19,13 @@ import com.android.volley.Request.Method;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 
-public class SimpleRequestActivity extends BaseActivity {
+public class ParamsRequestActivity extends BaseActivity {
 	private TextView mTvResult;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_simple_request);
+		setContentView(R.layout.activity_params_request);
 
 		mTvResult = (TextView) findViewById(R.id.tv_result);
 
@@ -30,8 +33,12 @@ public class SimpleRequestActivity extends BaseActivity {
 		btnSimpleRequest.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				executeRequest(new StringRequest(Method.GET, Api.BAIDU, responseListener(),
-						errorListener()));
+				executeRequest(new StringRequest(Method.POST, Api.POST_TEST,
+						responseListener(), errorListener()) {
+					protected Map<String, String> getParams() {
+						return new ApiParams().with("param1", "2").with("param2", "haha");
+					}
+				});
 			}
 		});
 	}
