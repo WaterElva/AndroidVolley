@@ -4,5 +4,6 @@
     <string name="app_name">VolleySample</string>
     <string name="action_settings">Settings</string>
     <string name="activity_simple_request_btn">Execute simple request</string>
+    <string name="activity_json_request_btn">Execute json request</string>
 
 </resources>

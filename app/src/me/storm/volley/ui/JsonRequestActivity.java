@@ -26,7 +26,7 @@ public class JsonRequestActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_simple_request);
+		setContentView(R.layout.activity_json_request);
 
 		mTvResult = (TextView) findViewById(R.id.tv_result);
 
