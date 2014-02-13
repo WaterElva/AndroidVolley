@@ -7,7 +7,7 @@ package me.storm.volley.ui;
 import me.storm.volley.R;
 import me.storm.volley.data.GsonRequest;
 import me.storm.volley.model.MyClass;
-import vendor.Api;
+import vendor.VolleyApi;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -31,7 +31,7 @@ public class GsonRequestActivity extends BaseActivity {
 		btnRequest.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				executeRequest(new GsonRequest<MyClass>(Api.GSON_TEST, MyClass.class,
+				executeRequest(new GsonRequest<MyClass>(VolleyApi.GSON_TEST, MyClass.class,
 						responseListener(), errorListener()));
 			}
 		});

@@ -5,7 +5,7 @@
 package me.storm.volley.ui;
 
 import me.storm.volley.R;
-import vendor.Api;
+import vendor.VolleyApi;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -30,7 +30,7 @@ public class SimpleRequestActivity extends BaseActivity {
 		btnRequest.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				executeRequest(new StringRequest(Method.GET, Api.BAIDU, responseListener(),
+				executeRequest(new StringRequest(Method.GET, VolleyApi.BAIDU, responseListener(),
 						errorListener()));
 			}
 		});

@@ -8,7 +8,7 @@ import me.storm.volley.R;
 
 import org.json.JSONObject;
 
-import vendor.Api;
+import vendor.VolleyApi;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -33,7 +33,7 @@ public class JsonRequestActivity extends BaseActivity {
 		btnRequest.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				executeRequest(new JsonObjectRequest(Method.GET, Api.JSON_TEST, null,
+				executeRequest(new JsonObjectRequest(Method.GET, VolleyApi.JSON_TEST, null,
 						responseListener(), errorListener()));
 			}
 		});

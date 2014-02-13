@@ -4,7 +4,7 @@
 
 package vendor;
 
-public class Api {
+public class VolleyApi {
 	public static final String BAIDU = "http://www.baidu.com/";
 	
 	public static final String JSON_TEST = "http://echo.jsontest.com/key/value/one/two";

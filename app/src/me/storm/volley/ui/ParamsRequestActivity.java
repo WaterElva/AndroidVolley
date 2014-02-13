@@ -8,7 +8,7 @@ import java.util.Map;
 
 import me.storm.volley.R;
 import me.storm.volley.data.ApiParams;
-import vendor.Api;
+import vendor.VolleyApi;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -33,7 +33,7 @@ public class ParamsRequestActivity extends BaseActivity {
 		btnRequest.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				executeRequest(new StringRequest(Method.POST, Api.POST_TEST, responseListener(),
+				executeRequest(new StringRequest(Method.POST, VolleyApi.POST_TEST, responseListener(),
 						errorListener()) {
 					protected Map<String, String> getParams() {
 						return new ApiParams().with("param1", "02").with("param2", "14");
