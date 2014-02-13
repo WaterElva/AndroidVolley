@@ -4,8 +4,8 @@
 
 package me.storm.volley.ui;
 
-import vendor.Api;
 import me.storm.volley.R;
+import vendor.Api;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,8 +26,8 @@ public class SimpleRequestActivity extends BaseActivity {
 
 		mTvResult = (TextView) findViewById(R.id.tv_result);
 
-		Button btnSimpleRequest = (Button) findViewById(R.id.btn_simple_request);
-		btnSimpleRequest.setOnClickListener(new OnClickListener() {
+		Button btnRequest = (Button) findViewById(R.id.btn_simple_request);
+		btnRequest.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				executeRequest(new StringRequest(Method.GET, Api.BAIDU, responseListener(),

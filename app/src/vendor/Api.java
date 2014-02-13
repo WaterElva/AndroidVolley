@@ -11,5 +11,5 @@ public class Api {
 	
 	public static final String POST_TEST = "http://ave.bolyartech.com/params.php";
 	
-	public static final String GSON_TEST = "";
+	public static final String GSON_TEST = "http://validate.jsontest.com/?json={'key':'value'}";
 }

@@ -29,12 +29,12 @@ public class ParamsRequestActivity extends BaseActivity {
 
 		mTvResult = (TextView) findViewById(R.id.tv_result);
 
-		Button btnSimpleRequest = (Button) findViewById(R.id.btn_simple_request);
-		btnSimpleRequest.setOnClickListener(new OnClickListener() {
+		Button btnRequest = (Button) findViewById(R.id.btn_params_request);
+		btnRequest.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				executeRequest(new StringRequest(Method.POST, Api.POST_TEST,
-						responseListener(), errorListener()) {
+				executeRequest(new StringRequest(Method.POST, Api.POST_TEST, responseListener(),
+						errorListener()) {
 					protected Map<String, String> getParams() {
 						return new ApiParams().with("param1", "02").with("param2", "14");
 					}

@@ -5,10 +5,10 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/btn_json_request"
+        android:id="@+id/btn_gson_request"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_json_request_btn" >
+        android:text="@string/activity_gson_request_btn" >
     </Button>
 
     <ScrollView

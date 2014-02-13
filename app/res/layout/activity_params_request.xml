@@ -5,7 +5,7 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/btn_simple_request"
+        android:id="@+id/btn_params_request"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/activity_params_request_btn" >
