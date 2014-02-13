@@ -41,6 +41,10 @@
             android:name=".ui.GsonRequestActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".ui.ImageLoadingActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

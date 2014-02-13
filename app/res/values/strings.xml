@@ -7,5 +7,6 @@
     <string name="activity_json_request_btn">Execute json request</string>
     <string name="activity_params_request_btn">POST params</string>
     <string name="activity_gson_request_btn">Execute gson request</string>
+    <string name="image_loading_btn_request">Image loading</string>
 
 </resources>

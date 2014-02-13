@@ -24,7 +24,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
 			new ActivityInfo("SimpleRequest", SimpleRequestActivity.class),
 			new ActivityInfo("JsonRequest", JsonRequestActivity.class),
 			new ActivityInfo("PostParamsRequest", ParamsRequestActivity.class),
-			new ActivityInfo("GsonRequest", GsonRequestActivity.class));
+			new ActivityInfo("GsonRequest", GsonRequestActivity.class),
+			new ActivityInfo("ImageLoading", ImageLoadingActivity.class));
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
