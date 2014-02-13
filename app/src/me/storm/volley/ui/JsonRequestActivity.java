@@ -6,7 +6,6 @@ package me.storm.volley.ui;
 
 import me.storm.volley.R;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import vendor.Api;
@@ -44,11 +43,7 @@ public class JsonRequestActivity extends BaseActivity {
 		return new Response.Listener<JSONObject>() {
 			@Override
 			public void onResponse(JSONObject response) {
-				try {
-					mTvResult.setText(response.getString("one"));
-				} catch (JSONException e) {
-					mTvResult.setText("Parse error");
-				}
+				mTvResult.setText(response.toString());
 			}
 		};
 	}

@@ -36,7 +36,7 @@ public class ParamsRequestActivity extends BaseActivity {
 				executeRequest(new StringRequest(Method.POST, Api.POST_TEST,
 						responseListener(), errorListener()) {
 					protected Map<String, String> getParams() {
-						return new ApiParams().with("param1", "2").with("param2", "haha");
+						return new ApiParams().with("param1", "02").with("param2", "14");
 					}
 				});
 			}
