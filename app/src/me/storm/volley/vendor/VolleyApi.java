@@ -2,7 +2,7 @@
  * Created by Storm Zhang, 2014.
  */
 
-package vendor;
+package me.storm.volley.vendor;
 
 public class VolleyApi {
 	public static final String BAIDU = "http://www.baidu.com/";

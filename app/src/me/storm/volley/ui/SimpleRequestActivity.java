@@ -5,7 +5,7 @@
 package me.storm.volley.ui;
 
 import me.storm.volley.R;
-import vendor.VolleyApi;
+import me.storm.volley.vendor.VolleyApi;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;

@@ -5,10 +5,10 @@
 package me.storm.volley.ui;
 
 import me.storm.volley.R;
+import me.storm.volley.vendor.VolleyApi;
 
 import org.json.JSONObject;
 
-import vendor.VolleyApi;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;

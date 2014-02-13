@@ -11,11 +11,23 @@ AndroidVolley
 
 * [okhttp](http://square.github.io/okhttp/)
 
-他们各有优劣，我个人则比较喜欢用android-async-http, 如今Google推出了官方的针对Android平台上的网络通信库，能使网络通信更快，更简单，更健壮，我们没有理由不跟上时代潮流。
+他们各有优劣，之前个人则比较喜欢用android-async-http, 如今Google推出了官方的针对Android平台上的网络通信库，能使网络通信更快，更简单，更健壮，Volley在提供了高性能网络通讯功能的同时，对网络图片加载也提供了良好的支持，完全可以满足简单REST客户端的需求, 我们没有理由不跟上时代的潮流。
+
+## 使用Volley
+
+下载Volley源码并build jar包。
+
+    $ git clone https://android.googlesource.com/platform/frameworks/volley
+    $ cd volley
+    $ android update project -p
+    $ ant jar
+
+然后把生成的jar包引用到我们的项目中，extras目录下则包含了目前最新的volley源码。
+
 
 ## 说明
 
-extras目录下是Volley源码, 此Demo主要介绍了日常网络开发常用的基本功能，但volley的扩展性很强，可以根据需要定制你自己的网络请求。
+此Demo主要介绍了日常网络开发常用的基本功能，但volley的扩展性很强，可以根据需要定制你自己的网络请求。
 
 ![AndroidVolley](https://raw2.github.com/stormzhang/AndroidVolley/master/art/snap.jpg)
 
